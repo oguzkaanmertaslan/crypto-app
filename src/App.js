@@ -1,7 +1,14 @@
 import React from "react";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
-import { Navbar, Exchanges, Homepage, Cryptocurrencies, CryptoDetails, News } from "./components";
+import {
+  Navbar,
+  Exchanges,
+  Homepage,
+  Cryptocurrencies,
+  CryptoDetails,
+  News,
+} from "./components";
 import "./App.css";
 const App = () => {
   return (
@@ -31,18 +38,21 @@ const App = () => {
             </Switch>
           </div>
         </Layout>
-      <div className="footer" level={5} style={{color:"white", textAlign:"center"}}>
+        <div
+          className="footer"
+          level={5}
+          style={{ color: "white", textAlign: "center" }}
+        >
           <Typography.Title>
-              Crypoverse <br/>
-              All rights reserved
+            Crypoverse <br />
+            All rights reserved
           </Typography.Title>
           <Space>
-              <Link to="/">Home</Link>
-              <Link to="/exchanges">Exchanges</Link>
-              <Link to="/news">News</Link>
-
+            <Link to="/">Home</Link>
+            <Link to="/exchanges">Exchanges</Link>
+            <Link to="/news">News</Link>
           </Space>
-      </div>
+        </div>
       </div>
     </div>
   );
